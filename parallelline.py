@@ -7,7 +7,8 @@ Make something Task. The Task is a function that takes one Pipe instance.
 ...         with open('{}.dat', 'rb') as f:
 ...             pipe.put(f.read())
 
-The Pipe can replace with a generator. Please use @generator_task decorator.
+The Task function can replace with a generator. Please use @generator_task
+decorator.
 The pipe in arguments is Pipe instance but can use as an iterator. Of course,
 can use Pipe as an iterator in the normal Task function.
 >>> @generator_task

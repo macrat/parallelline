@@ -19,7 +19,7 @@ Make something Task. The Task is a function that takes one Pipe instance.
 ...             pipe.put(f.read())
 ```
 
-The Pipe can replace with a generator. Please use @generator\_task decorator.
+The Task function can replace with a generator. Please use `@generator_task` decorator.
 The pipe in arguments is Pipe instance but can use as an iterator.
 Of course, can use Pipe as an iterator in the normal Task function.
 
@@ -30,8 +30,8 @@ Of course, can use Pipe as an iterator in the normal Task function.
 ...         yield something_heavy_process(data)
 ```
 
-You can use @task decorator if Task hasn't to hold state.
-Please make a function that takes one object and return one object, and allies @task decorator. In this example, show function will return None but work well.
+You can use `@task` decorator if Task hasn't to hold state.
+Please make a function that takes one object and return one object, and allies `@task` decorator. In this example, show function will return None but work well.
 
 ``` python
 >>> @task
